@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "carboniq"
+version = "0.1.0"
+description = "Carbon-aware computing CLI"
+requires-python = ">=3.12"
+dependencies = [
+    "typer",
+    "codecarbon"
+]
+
+[project.scripts]
+carboniq = "carboniq.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
