@@ -9,7 +9,8 @@ description = "Carbon-aware computing CLI"
 requires-python = ">=3.12"
 dependencies = [
     "typer",
-    "codecarbon"
+    "codecarbon",
+    "requests"
 ]
 
 [project.scripts]

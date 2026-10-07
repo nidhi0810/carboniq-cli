@@ -9,6 +9,6 @@ def track_command(command: list[str]):
 
     result = subprocess.run(command)
 
-    emissions = tracker.stop()
+    tracker.stop()
 
-    return result, emissions
+    return result, tracker.final_emissions_data
